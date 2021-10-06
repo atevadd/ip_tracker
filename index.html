@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- box icons CDN -->
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- leaflet css CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main class="wrapper">
+    <!-- The search area -->
+    <section class="search-area">
+      <section class="tracker-field">
+        <h1>IP Address Tracker</h1>
+        <form action="">
+          <input type="text" name="" id="search" placeholder="Search for any IP address or domain">
+          <button type="submit"><i class="bx bx-chevron-right"></i></button>
+          <div class="loader"></div>
+          <span class="error">not found</span>
+        </form>
+      </section>
+
+      <section class="tracker-result">
+        <div class="result">
+          <h3>IP Address</h3>
+          <p class="ip">192.212.174.101</p>
+        </div>
+        <div class="result">
+          <h3>Location</h3>
+          <p class="location">Brookly, NY 10001</p>
+        </div>
+        <div class="result">
+          <h3>Timezone</h3>
+          <p class="timezone">UTC - 05:00</p>
+        </div>
+        <div class="result">
+          <h3>ISP</h3>
+          <p class="isp">SpaceX Starlink</p>
+        </div>
+      </section>
+    </section>
+
+    <!-- The map on the page -->
+    <section class="search-map" id="map">
+    </section>
+  </main>
+
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
